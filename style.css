@@ -1,0 +1,291 @@
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Styles for the login container */
+.login-container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Styles for the login container heading */
+.login-container h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #6a11cb;
+}
+
+/* Ensure consistent width for form inputs */
+.styled-form input[type="date"],
+.styled-form input[type="text"],
+.styled-form input[type="password"],
+.styled-form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Styles for buttons inside the login container */
+.login-container button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for buttons in the login container */
+.login-container button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+/* Styles for links inside the login container */
+.login-container a {
+    display: block;
+    margin-top: 15px;
+    color: #2575fc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Hover effect for links inside the login container */
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the main container */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    color: #333;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Styles for the container heading */
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #6a11cb;
+}
+
+/* Styles for navigation menu */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Styles for navigation links */
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-menu a:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+/* Styles for tables */
+.styled-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Styles for table headers and cells */
+.styled-table th, .styled-table td {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* Styles for table header row */
+.styled-table thead tr {
+    background-color: #6a11cb;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styles for alternating table rows */
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect for table rows */
+.styled-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Styles for action links */
+.action-link {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+/* Hover effect for action links */
+.action-link:hover {
+    text-decoration: underline;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Styles for button links */
+.button-link {
+    display: inline-block;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px 30px;
+    margin: 15px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for button links */
+.button-link:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+/* Styles for forms */
+.styled-form {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for form groups */
+.styled-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Styles for form labels */
+.styled-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #6a11cb;
+}
+
+/* Styles for success messages */
+.success-text {
+    color: green;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styles for error messages */
+.error-text {
+    color: red;
+    font-size: 1em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Styles for highlighted status text */
+.status-highlight {
+    font-weight: bold;
+    color: red;
+}
+
+/* Responsive styles for tablet screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px 30px;
+        max-width: 90%;
+    }
+
+    .button-link {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .styled-table th, .styled-table td {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    .login-container {
+        padding: 20px 30px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .styled-table th, .styled-table td {
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+
+    .button-link {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
