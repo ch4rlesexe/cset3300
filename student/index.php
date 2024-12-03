@@ -51,7 +51,7 @@ $students = $pdo->query("SELECT * FROM student")->fetchAll();
                         <td>
                             <a href="edit.php?id=<?php echo $student['rocketid']; ?>" class="action-link">Edit</a> |
                             <?php if ($student['active']): ?>
-                                <a href="delete.php?id=<?php echo $student['rocketid']; ?>" class="action-link">Remove</a>
+                                <a href="delete.php?id=<?php echo $student['rocketid']; ?>" class="action-link">Disable</a>
                             <?php else: ?>
                                 <a href="enable.php?id=<?php echo $student['rocketid']; ?>" class="action-link">Enable</a>
                             <?php endif; ?>
