@@ -43,6 +43,7 @@ $books = $pdo->query("SELECT * FROM book")->fetchAll();
                         </td>
                         <td>
                             <a href="edit.php?id=<?php echo $book['bookid']; ?>" class="action-link">Edit</a> |
+                            <a href="history.php?bookid=<?php echo $book['bookid']; ?>" class="action-link">View History</a>
                             <?php if ($book['active']): ?>
                                 <a href="delete.php?id=<?php echo $book['bookid']; ?>" class="action-link">Remove</a>
                             <?php else: ?>
